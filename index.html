@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Product Preview Design</h1>
+    <div class="container">
+        <div class="prod-img-container">
+            <img src="./images/laptop1.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop1.jpg')">
+            <img src="./images/laptop2.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop2.jpg')">
+            <img src="./images/laptop3.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop3.jpg')">
+            <img src="./images/laptop4.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop4.jpg')">
+            <img src="./images/laptop5.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop5.jpg')">
+            <img src="./images/laptop6.jpg" alt="" class="prod-img" onclick="changeImg('./images/laptop6.jpg')">
+        </div>
+        <img src="./images/laptop1.jpg" alt="" id="main-prod-img" >
+    </div>
+
+    <script>
+        function changeImg(imgName){
+            const mainImg = document.getElementById("main-prod-img");
+            mainImg.src = imgName;
+        }
+    </script>
+</body>
+</html>
